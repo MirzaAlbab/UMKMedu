@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <?xml version="1.0" encoding="utf-8"?>
     <shape xmlns:android="http://schemas.android.com/apk/res/android">
         <corners android:radius="16dp"/>
         <solid android:color="#FFFFFF"/>
@@ -9,4 +7,3 @@
             android:color="#E8E5E5"/>
 
     </shape>
-</selector>

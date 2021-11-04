@@ -19,7 +19,7 @@
             android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/rounded2" />
         <TextView
             android:id="@+id/text1"
@@ -29,77 +29,90 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="#22577A"
             android:textSize="16dp"
-            android:textStyle="bold" />
-        <ImageButton
-            android:layout_width="320dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/batik"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:text="UMKM Batik Main Populer"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="169dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/batik"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:textSize="14dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Diam dolor turpis in tortor. Amet, risus lacus tincidunt
-            augue risus sed turpis euismod. "
-            android:textColor="#888787" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="185dp"
+                android:layout_marginLeft="10dp"
+                android:text="UMKM Batik Main Populer"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="25dp"
-            android:textSize="12dp"
-            android:text="Selengkapnya>>"
-            android:textColor="#3A6480" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="205dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Diam dolor turpis in tortor. Amet, risus lacus tincidunt
+augue risus sed turpis euismod. "
+                android:textColor="#888787" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="275dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="12dp"
+                android:text="Baca selengkapnya>>"
+                android:textColor="#3A6480" />
+        </android.support.v7.widget.CardView>
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Diskusi Teratas"
+            android:layout_marginTop="15dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="#22577A"
             android:textSize="16sp"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/Button1"
             android:layout_width="320dp"
             android:layout_height="40dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded"
             android:text="      bisnis makanan"
-            android:textSize="12dp"
+            android:textAlignment="textStart"
             android:textColor="#7A7575"
-            android:textAlignment="textStart" />
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/Button2"
             android:layout_width="320dp"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
-            android:textSize="12dp"
-            android:textColor="#7A7575"
             android:background="@drawable/rounded"
             android:text="      bisnis kerajinan"
-            android:textAlignment="textStart" />
+            android:textAlignment="textStart"
+            android:textColor="#7A7575"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 </LinearLayout>
