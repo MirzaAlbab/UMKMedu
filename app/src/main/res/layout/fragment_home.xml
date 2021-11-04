@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded2" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artikel Teratas"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#22577A"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:layout_width="320dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/batik"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="UMKM Batik Main Populer"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Diam dolor turpis in tortor. Amet, risus lacus tincidunt
+            augue risus sed turpis euismod. "
+            android:textColor="#888787" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="12dp"
+            android:text="Selengkapnya>>"
+            android:textColor="#3A6480" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskusi Teratas"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#22577A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded"
+            android:text="      bisnis makanan"
+            android:textSize="12dp"
+            android:textColor="#7A7575"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#7A7575"
+            android:background="@drawable/rounded"
+            android:text="      bisnis kerajinan"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+</LinearLayout>
