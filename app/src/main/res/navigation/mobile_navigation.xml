@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/navigation_diskusi"
         android:name="com.example.umkmedu.ui.diskusi.DiskusiFragment"
-        android:label="@string/title_diksusi"
+        android:label="Diskusi"
         tools:layout="@layout/fragment_diskusi" />
 
     <fragment

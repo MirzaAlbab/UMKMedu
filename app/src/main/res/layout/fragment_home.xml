@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="25dp">
+        android:padding="25dp"
+        tools:ignore="MissingConstraints">
 
         <SearchView
             android:id="@+id/search"
@@ -33,7 +33,7 @@
             android:layout_marginBottom="10dp"
             />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="320dp"
             android:layout_height="320dp"
             android:layout_marginLeft="10dp"
@@ -75,8 +75,8 @@ augue risus sed turpis euismod. "
                 android:layout_marginBottom="25dp"
                 android:textSize="12dp"
                 android:text="Baca selengkapnya>>"
-                android:textColor="#3A6480" />
-        </android.support.v7.widget.CardView>
+                android:textColor="#3C3E40" />
+        </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
@@ -115,4 +115,4 @@ augue risus sed turpis euismod. "
             android:textSize="12dp"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
