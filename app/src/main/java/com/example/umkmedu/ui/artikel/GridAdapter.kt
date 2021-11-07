@@ -4,55 +4,52 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.umkmedu.R
 
-internal class GridAdapter(
-    private val context: Context,
-    private val manhwaname: Array<String>,
-    private val image: IntArray,
-    private val genre: Array<String>
+class GridAdapter {
+    var context: Context? = null
+    lateinit var manhwaname: Array<String>
+    lateinit var genre: Array<String>
+    lateinit var image: IntArray
 
-) :
-//class GridAdapter(
-////    var context: Context,
-////    var manhwaname: Array<String>,
-////    var image: IntArray,
-////    var genre: Array<String>
-////) :
+    var inflater: LayoutInflater? = null
 
-    BaseAdapter() {
-    private var layoutInflater: LayoutInflater? = null
-    private lateinit var imageView: ImageView
-    private lateinit var textView: TextView
-    private lateinit var textView1: TextView
-    override fun getCount(): Int {
+    fun GridAdapter(
+        context: Context?,
+        manhwaname: Array<String>,
+        image: IntArray,
+        genre: Array<String>
+    ) {
+        this.context = context
+        this.manhwaname = manhwaname
+        this.image = image
+        this.genre = genre
+    }
+
+    fun getCount(): Int {
         return manhwaname.size
     }
-    override fun getItem(position: Int): Any? {
+
+    fun getItem(position: Int): Any? {
         return null
     }
-    override fun getItemId(position: Int): Long {
+
+    fun getItemId(position: Int): Long {
         return 0
     }
-    override fun getView(
-        position: Int,
-        convertView: View?,
-        parent: ViewGroup
-    ): View? {
+
+    fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var convertView = convertView
-        if (layoutInflater == null) {
-            layoutInflater =
-                context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        }
+        if (inflater == null) inflater =
+            context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         if (convertView == null) {
-            convertView = layoutInflater!!.inflate(R.layout.gridartikel, null)
+            convertView = inflater!!.inflate(R.layout.grid_item, null)
         }
-        imageView = convertView!!.findViewById<ImageView>(R.id.grid_image)
-        textView = convertView.findViewById<TextView>(R.id.item_name)
-        textView1 = convertView.findViewById<TextView>(R.id.item_genre)
+        val imageView = convertView!!.findViewById<ImageView>(R.id.grid_image)
+        val textView = convertView.findViewById<TextView>(R.id.item_name)
+        val textView1 = convertView.findViewById<TextView>(R.id.item_genre)
         imageView.setImageResource(image[position])
         textView.text = manhwaname[position]
         textView1.text = genre[position]
@@ -60,32 +57,3 @@ internal class GridAdapter(
     }
 
 }
-//    BaseAdapter() {
-//    var inflater: LayoutInflater? = null
-//    override fun getCount(): Int {
-//        return manhwaname.size
-//    }
-//
-//    override fun getItem(position: Int): Any {
-//        return null
-//    }
-//
-//    override fun getItemId(position: Int): Long {
-//        return 0
-//    }
-//
-//    override fun getView(position: Int, convertView: View, parent: ViewGroup): View {
-//        var convertView = convertView
-//        if (inflater == null) inflater =
-//            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-//        if (convertView == null) {
-//            convertView = inflater.inflate(R.layout.grid_item, null)
-//        }
-//        val imageView = convertView.findViewById<ImageView>(R.id.grid_image)
-//        val textView = convertView.findViewById<TextView>(R.id.item_name)
-//        val textView1 = convertView.findViewById<TextView>(R.id.item_genre)
-//        imageView.setImageResource(image[position])
-//        textView.text = manhwaname[position]
-//        textView1.text = genre[position]
-//        return convertView
-//    }
