@@ -36,7 +36,6 @@
         android:layout_marginHorizontal="30dp"
         android:justificationMode="inter_word"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor turpis in tortor. Amet,risus lacus tincidunt augue risus sed turpis euismod.Dui dui, habitasse phasellus nisi sit eu. Augue proinsagittis adipiscing magnis tempor gravida. Turpismassa diam placerat nec. Sed egestas at commodo nuncfacilisis faucibus quis.
-
       "
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"/>
