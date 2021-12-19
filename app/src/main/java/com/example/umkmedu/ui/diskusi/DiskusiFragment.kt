@@ -1,11 +1,16 @@
 package com.example.umkmedu.ui.diskusi
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.umkmedu.R
+import com.example.umkmedu.ReadArtikel
+import android.widget.Button
+import com.example.umkmedu.WriteDiscuss
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,8 +40,16 @@ class DiskusiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_diskusi, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_diskusi, container, false);
+        val button: Button = rootView.findViewById(R.id.mulaidiskusi) as Button;
+        button.setOnClickListener {
+            val intent = Intent(getActivity(), WriteDiscuss::class.java)
+            // start your next activity
+            startActivity(intent)
+        }
+        return rootView
     }
+
 
     companion object {
         /**

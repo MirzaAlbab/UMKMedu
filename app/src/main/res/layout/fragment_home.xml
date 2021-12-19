@@ -14,7 +14,6 @@
         android:orientation="vertical"
         android:padding="25dp"
         tools:ignore="MissingConstraints">
-
         <SearchView
             android:id="@+id/search"
             android:layout_width="match_parent"
@@ -35,17 +34,21 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="320dp"
+            android:id="@+id/headline"
             android:layout_height="320dp"
             android:layout_marginLeft="10dp"
-            app:cardCornerRadius="10dp"
-            >
-            <ImageButton
-                android:layout_width="300dp"
-                android:layout_height="169dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/batik"
                 tools:ignore="SpeakableTextPresentCheck" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,13 +64,13 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="205dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:textSize="14dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Diam dolor turpis in tortor. Amet, risus lacus tincidunt
-augue risus sed turpis euismod. "
+                android:text="@string/deskripsi"
                 android:textColor="#888787" />
 
             <TextView
+                android:id="@+id/readmore"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="275dp"

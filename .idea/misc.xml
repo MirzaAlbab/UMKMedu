@@ -17,15 +17,19 @@
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/drawable/profil.xml" value="0.1" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/drawable/rounded.xml" value="0.2203125" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/drawable/rounded2.xml" value="0.1" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/drawable/roundedimage.xml" value="0.2203125" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/drawable/roundedimg.xml" value="0.2203125" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/activity_main.xml" value="0.10778985507246377" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/activity_read_artikel.xml" value="0.12681159420289856" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/activity_write_discuss.xml" value="0.11367753623188406" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/bacaartikel.xml" value="0.1" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_artikel.xml" value="0.1" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_diskusi.xml" value="0.25" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_first.xml" value="0.1" />
-        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_home.xml" value="0.10778985507246377" />
-        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_profil.xml" value="0.1" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/fragment_profil.xml" value="0.25" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/grid_item.xml" value="0.1" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/gridartikel.xml" value="0.10778985507246377" />
         <entry key="..\:/Semester 5/Mobile Prak/UMKMedu/app/src/main/res/layout/lihatartikel.xml" value="0.1" />

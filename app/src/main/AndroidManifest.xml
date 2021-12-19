@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UMKMedu">
         <activity
+            android:name=".WriteDiscuss"
+            android:exported="false" />
+        <activity
+            android:name=".ReadArtikel"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
